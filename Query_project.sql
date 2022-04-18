@@ -21,12 +21,31 @@ select * from store;
 select * from supplier;
 select * from warehouse;
 
-#modify promotion, shelf, customer, dependents, paycheck, product
+#modify promotion, shelf, customer, paycheck, product
+#locate categories
+select shelf.location, product.category
+from shelf, product
+where shelf.productID = product.productID;
 
 #modify located shelf of product be02
 update shelf set location = 'isle 20'
 where productID = 'be02'; 
 
+#modify promotion
 
-#add new products
+update promotion set start_date = '02222022', end_date = '03222022'
+where productID = 'be03';
+select * from promotion;
+
+#modify customer
+select * from customer;
+update customer set phoneNumber = '8149023333'
+where first_name = 'John';
+
+#modify paycheck
+update paycheck set method = 'shares'
+where method = 'direct deposit';
+
+#add product
+insert into product values ('ch01', 'cheese');
 
