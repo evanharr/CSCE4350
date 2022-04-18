@@ -25,7 +25,7 @@ insert into manager values ('m033', 'Morris', 'Rogers', '81600', '238504184');
 insert into manager values ('m68', 'Jake', 'Peterson', '88300', '836501793');
 insert into manager values ('m84', 'Kayla', 'Ruiz', '91700', '153896204');
 insert into manager values ('m012', 'Andrew', 'Powell', '82000', '131452453');
-insert into manager values ('m220', 'Tomas', 'Perry', '1280000', '223116486');
+insert into manager values ('m220', 'Tomas', 'Perry', '128000', '223116486');
 insert into manager values ('m153', 'Harry', 'Walter', '97500', '094153152');
 insert into manager values ('m118', 'David', 'Ruiz', '94200', '665473212');
 
@@ -63,13 +63,12 @@ insert into product values('ca03','Canned');
 insert into product values('cl91','Cleaners');
 insert into product values('ba02','Bakery');
 
-	
-insert into customer values('John','Smith', 'jsmith@gmail.com', '1111111111');
-insert into customer values('Bill','Bradley', 'bbrad@gmail.com', '1232234312');
-insert into customer values('Jim','Johnson', 'jjohn@gmail.com', '4135244534');
-insert into customer values('Jack','Kim', 'jackkim@gmail.com', '9877866354');
-insert into customer values('Stephanie','Kellet', 'stephellet@gmail.com', '2143765476');
-insert into customer values('Avery','Kyryzowski', 'averykryz@gmail.com', '9722355486');
+insert into customer values('c01','John','Smith', 'jsmith@gmail.com', '1111111111');
+insert into customer values('c02','Bill','Bradley', 'bbrad@gmail.com', '1232234312');
+insert into customer values('c03','Jim','Johnson', 'jjohn@gmail.com', '4135244534');
+insert into customer values('c04','Jack','Kim', 'jackkim@gmail.com', '9877866354');
+insert into customer values('c05','Stephanie','Kellet', 'stephellet@gmail.com', '2143765476');
+insert into customer values('c06','Avery','Kyryzowski', 'averykryz@gmail.com', '9722355486');
 
 
 insert into supplier values('11111','Sysco');
@@ -79,11 +78,11 @@ insert into supplier values('62726','Finer foods');
 insert into supplier values('98734','Electronics company');
 
 
-insert into payment_method values('10000','1127364509382763','111','0426','900','01012022');
-insert into payment_method values('10110','2094867823645172','092','0101','50','05212022');
-insert into payment_method values('20384','0984577483923642','222','0324','300','07092022');
-insert into payment_method values('10346','0938757893122356','453','1220','250','11312022');
-insert into payment_method values('73632','2235466832904657','874','0603','100','12192022');
+insert into payment_method values('p01','1127364509382763','111','0426','10000','900','01012022');
+insert into payment_method values('p02','2094867823645172','092','0101','10110','50','05212022');
+insert into payment_method values('p03','0984577483923642','222','0324','20384','300','07092022');
+insert into payment_method values('p04','0938757893122356','453','1220','10346','250','11312022');
+insert into payment_method values('p05','2235466832904657','874','0603','73632','100','12192022');
 
  
 insert into promotion values('11111','01312022','03012022');
