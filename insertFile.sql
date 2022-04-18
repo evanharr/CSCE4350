@@ -85,9 +85,9 @@ insert into payment_method values('p04','0938757893122356','453','1220','10346',
 insert into payment_method values('p05','2235466832904657','874','0603','73632','100','12192022');
 
  
-insert into promotion values('11111','01312022','03012022');
-insert into promotion values('22222','04102022','0510222');
-insert into promotion values('33333','05012022','06012022');
+insert into promotion values('11111','01312022','03012022','be03');
+insert into promotion values('22222','04102022','0510222','ca02');
+insert into promotion values('33333','05012022','06012022','pc01');
 
 
 insert into membership values('11111','gold','01012024','0');
