@@ -1,6 +1,6 @@
 create table manager
 	(managerID		varchar(5) not null,
-	first_name		varchar(20) not null,
+	 first_name		varchar(20) not null,
      last_name		varchar(20) not null,
      salary			numeric(8,2) not null,
      ssn 			char(9) not null,
@@ -8,7 +8,7 @@ create table manager
 	 primary key (managerID)
 	);
     
-create table employee
+    create table employee
 	(employeeID		char(5) not null,
 	 first_name		varchar(20) not null,
      last_name		varchar(20) not null,
@@ -58,6 +58,7 @@ create table employee
 	(promotionID		char(5) not null,
 	 start_date			char(8) not null,
      end_date			char(8) not null,
+     productID	char(5),
 	 
 	 primary key (promotionID)
 	);
@@ -84,7 +85,7 @@ create table employee
      primary key (departmentID)
 	);
     
-   create table shelf
+    create table shelf
 	(location 				varchar(20) not null,
     productID	char(5),
     
@@ -120,8 +121,9 @@ create table employee
 	(first_name 			varchar(20) not null,
      last_name 				varchar(20) not null,
      date_of_birth			varchar(8) not null,
+     employeeID		char(5) not null,
      
-     primary key (first_name,last_name)
+     primary key (employeeID)
 	);
     
     create table shipment
