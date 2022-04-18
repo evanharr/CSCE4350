@@ -84,10 +84,11 @@ create table employee
      primary key (departmentID)
 	);
     
-    create table shelf
+   create table shelf
 	(location 				varchar(20) not null,
+    productID	char(5),
     
-	 primary key (location)
+	 primary key (productID)
 	);
     
     create table paycheck
