@@ -63,6 +63,7 @@ insert into product values('ca03','Canned');
 insert into product values('cl91','Cleaners');
 insert into product values('ba02','Bakery');
 
+	
 insert into customer values('c01','John','Smith', 'jsmith@gmail.com', '1111111111');
 insert into customer values('c02','Bill','Bradley', 'bbrad@gmail.com', '1232234312');
 insert into customer values('c03','Jim','Johnson', 'jjohn@gmail.com', '4135244534');
@@ -78,11 +79,11 @@ insert into supplier values('62726','Finer foods');
 insert into supplier values('98734','Electronics company');
 
 
-insert into payment_method values('p01','1127364509382763','111','0426','10000','900','01012022');
-insert into payment_method values('p02','2094867823645172','092','0101','10110','50','05212022');
-insert into payment_method values('p03','0984577483923642','222','0324','20384','300','07092022');
-insert into payment_method values('p04','0938757893122356','453','1220','10346','250','11312022');
-insert into payment_method values('p05','2235466832904657','874','0603','73632','100','12192022');
+insert into payment_method values('10000','1127364509382763','111','0426','900','01012022');
+insert into payment_method values('10110','2094867823645172','092','0101','50','05212022');
+insert into payment_method values('20384','0984577483923642','222','0324','300','07092022');
+insert into payment_method values('10346','0938757893122356','453','1220','250','11312022');
+insert into payment_method values('73632','2235466832904657','874','0603','100','12192022');
 
  
 insert into promotion values('11111','01312022','03012022','be03');
@@ -128,30 +129,21 @@ insert into department values('55555','Delivery Driver');
 insert into department values('66666','Stocking');
 insert into department values('77777','Floor');
 
-insert into shelf values('isle 1','be01');
-insert into shelf values('isle 1','be02');
-insert into shelf values('isle 1','be03');
-insert into shelf values('isle 1','ba04');
-insert into shelf values('isle 2','ca01');
-insert into shelf values('isle 2','ca02');
-insert into shelf values('isle 2','ca03');
-insert into shelf values('isle 3','da22');
-insert into shelf values('isle 3','da24');
-insert into shelf values('isle 3','da26');
-insert into shelf values('isle 4','me01');
-insert into shelf values('isle 5','me02');
-insert into shelf values('isle 5','me03');
-insert into shelf values('isle 6','ba01');
-insert into shelf values('isle 6','ba02');
-insert into shelf values('isle 6','ba03');
-insert into shelf values('isle 7','ff01');
-insert into shelf values('isle 7','ff02');
-insert into shelf values('isle 8','cl90');
-insert into shelf values('isle 9','cl91');
-insert into shelf values('isle 10','pc01');
-insert into shelf values('isle 11','pc02');
-insert into shelf values('isle 12','ff03');
-
+insert into shelf values('aisle 1');
+insert into shelf values('aisle 2');
+insert into shelf values('aisle 3');
+insert into shelf values('aisle 4');
+insert into shelf values('aisle 5');
+insert into shelf values('aisle 6');
+insert into shelf values('aisle 7');
+insert into shelf values('aisle 8');
+insert into shelf values('aisle 9');
+insert into shelf values('aisle 10');
+insert into shelf values('aisle 11');
+insert into shelf values('aisle 12');
+insert into shelf values('aisle 13');
+insert into shelf values('aisle 14');
+insert into shelf values('aisle 15');
 
 insert into paycheck values('1111','direct deposit','1000.56','04012022');
 insert into paycheck values('09234','direct deposit','600.12','04012022');
@@ -169,4 +161,60 @@ insert into store values('34211','423 main, Prosper Tx','75068');
 insert into store values('48932','Locust st, Denton TX','76201');
 insert into store values('23409','Cross Timbers, Flower Mound TX','78091');
 
+insert into warehouse values('15475','S Carroll, Denton TX','76201');
+insert into warehouse values('23782','3440 Corinth Pkwy, Corinth TX','76208');
+insert into warehouse values('10000','E 6th St, Prosper Tx','75078');
+insert into warehouse values('11543','Ponder Rd, Denton TX','76201');
+insert into warehouse values('18749','Veronica St, Flower Mound TX','75022');
 
+insert into dependents values ('Barbara', 'Walter','05041993', 'm91');
+insert into dependents values ('Peyton', 'Bailey','08111998', 'm203');
+insert into dependents values ('Natalie', 'Rogers','11082002', 'm033');
+insert into dependents values ('Zayd', 'Peterson','03302000', 'm68');
+insert into dependents values ('Isabella', 'Ruiz','07152000', 'm84');
+insert into dependents values ('Isaiah', 'Powell','12132006', 'm012');
+insert into dependents values ('Lesley', 'Perry','01271999', 'm220');
+insert into dependents values ('Graham', 'Walter','09162004', 'm153');
+insert into dependents values ('Christian', 'Robinson', '07222002', 'e111');
+insert into dependents values ('Ian', 'Lee', '10062001', 'e134');
+insert into dependents values ('William', 'Scott', '04082005', 'e180');
+insert into dependents values ('Fatima', 'Torres', '06232000', 'e177');
+insert into dependents values ('Orville', 'Wright', '11282006', 'e129');
+insert into dependents values ('Jacklyn', 'Hill', '12312010', 'e116');
+insert into dependents values ('Valerie', 'Rivera', '05162002', 'e104');
+insert into dependents values ('Micah', 'Campell', '02142006', 'e162');
+
+insert into shipment values('55024','04012019','UPS','500 Inman St, Denton TX, 76201');
+insert into shipment values('40403','08302020','UPS','200 Bonnie Brae St, Denton TX, 76205');
+insert into shipment values('76238','03032021','FedEx','155 Precision Dr, Denton TX, 76205');
+insert into shipment values('17943','06142019','UPS','905 Cleveland St, Denton TX, 76201');
+insert into shipment values('29752','11232020','UPS','2601 West Oak St, Denton TX, 76201');
+insert into shipment values('36287','10202021','FedEx','200 Inman St, Denton TX, 76201');
+
+insert into delivery values('14094','07202021','UPS');
+insert into delivery values('19676','08302021','UPS');
+insert into delivery values('45829','03252020','UPS');
+insert into delivery values('82517','10112019','FedEx');
+insert into delivery values('69487','05272021','FedEx');
+insert into delivery values('73012','09052020','FedEx');
+
+insert into help_ticket values('17264','Return Item','Expired dairy');
+insert into help_ticket values('28654','Return Item','Wrong item');
+insert into help_ticket values('11598','Incident','Employee mistreatment');
+insert into help_ticket values('33856','Exchange Request','Wrong size');
+insert into help_ticket values('93205','Change Password','Forgot password');
+insert into help_ticket values('57493','Change Password','Forgot username');
+
+insert into invoice values('10438','53400.00','02162022');
+insert into invoice values('21452','24000.00','11102021');
+insert into invoice values('16595','77232.00','04282021');
+insert into invoice values('15839','150000.00','06142021');
+insert into invoice values('24194','34345.00','03302022');
+insert into invoice values('19540','6050.00','07212021');
+
+insert into orders values('15287','07152021');
+insert into orders values('23972','08272021');
+insert into orders values('18496','03212020');
+insert into orders values('33333','10052019');
+insert into orders values('24650','05242021');
+insert into orders values('20175','09032020');
